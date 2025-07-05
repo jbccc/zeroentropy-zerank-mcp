@@ -1,31 +1,24 @@
 {
 	"$schema": "node_modules/wrangler/config-schema.json",
-	"name": "ze-rerank-mcp",
-	"main": "main.py",
+	"name": "zerank-mcp",
+	"main": "worker.js",
 	"compatibility_date": "2025-03-10",
-	"compatibility_flags": ["nodejs_compat", "python_workers"],
+	"compatibility_flags": ["nodejs_compat"],
 	"migrations": [
 		{
-			"new_sqlite_classes": ["MyMCP"],
+			"new_sqlite_classes": ["MCPServer"],
 			"tag": "v1"
 		}
 	],
 	"durable_objects": {
 		"bindings": [
 			{
-				"class_name": "MyMCP",
-				"name": "MCP_OBJECT"
+				"class_name": "MCPServer",
+				"name": "MCP_SERVER"
 			}
 		]
 	},
 	"observability": {
 		"enabled": true
-	},
-	"rules": [
-		{
-			"type": "Data",
-			"globs": ["vendor/**/*.so"],
-			"fallthrough": true
-		}
-	]
+	}
 }
