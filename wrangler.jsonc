@@ -3,7 +3,7 @@
 	"name": "zeroentropy-zerank-mcp",
 	"main": "rerank.py",
 	"compatibility_date": "2025-03-10",
-	"compatibility_flags": ["nodejs_compat"],
+	"compatibility_flags": ["nodejs_compat", "python_workers"],
 	"migrations": [
 		{
 			"new_sqlite_classes": ["MyMCP"],
