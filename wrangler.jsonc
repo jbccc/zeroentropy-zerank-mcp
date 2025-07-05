@@ -20,5 +20,12 @@
 	},
 	"observability": {
 		"enabled": true
-	}
+	},
+	"rules": [
+		{
+			"type": "Data",
+			"globs": ["vendor/**/*.so"],
+			"fallthrough": true
+		}
+	]
 }
