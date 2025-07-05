@@ -1,6 +1,6 @@
 {
 	"$schema": "node_modules/wrangler/config-schema.json",
-	"name": "zeroentropy-zerank-mcp",
+	"name": "ze-rerank-mcp",
 	"main": "rerank.py",
 	"compatibility_date": "2025-03-10",
 	"compatibility_flags": ["nodejs_compat", "python_workers"],
@@ -20,5 +20,12 @@
 	},
 	"observability": {
 		"enabled": true
-	}
+	},
+	"rules": [
+		{
+			"type": "Data",
+			"globs": ["vendor/**/*.so"],
+			"fallthrough": true
+		}
+	]
 }
