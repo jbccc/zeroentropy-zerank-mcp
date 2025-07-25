@@ -2,6 +2,10 @@
 
 A Model Context Protocol (MCP) server for document reranking using the ZeroEntropy Zerank API, now implemented in Node.js.
 
+<a href="https://glama.ai/mcp/servers/@jbccc/zeroentropy-zerank-mcp">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/@jbccc/zeroentropy-zerank-mcp/badge" alt="ZeroEntropy Zerank Server MCP server" />
+</a>
+
 ## Features
 
 - Document reranking using the ZeroEntropy Zerank API
